@@ -1,0 +1,29 @@
+{
+  "name": "HelloWorld",
+  "id": "HelloWorld",
+  "thumbnailURL": "",
+  "configs": {
+    "providerConfig": {
+      "configs": {
+        "type": "RDBMSBatchDataProvider",
+        "config": {
+          "datasourceName": "HELLOWorld_DB",
+          "query": "select * from helloWorldActivities",
+          "tableName": "helloWorldActivities",
+          "incrementalColumn": "engine",
+          "timeColumns": "",
+          "publishingInterval": 2,
+          "purgingInterval": 60,
+          "publishingLimit": 30,
+          "purgingLimit": 30,
+          "isPurgingEnable": false
+        }
+      }
+    }
+  },
+  "pubsub": {
+    "types": [
+      "publisher"
+    ]
+  }
+}
